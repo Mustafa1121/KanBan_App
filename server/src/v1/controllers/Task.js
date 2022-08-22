@@ -11,7 +11,7 @@ exports.create = async (req, res) => {
             position: tasksCount > 0 ? tasksCount : 0
         })
         task._doc.section = section
-        res.status(200).json('hello')
+        res.status(200).json(task)
     } catch (error) {
         res.status(500).json(error)
     }
